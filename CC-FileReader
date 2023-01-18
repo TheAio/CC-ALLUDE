@@ -1,0 +1,22 @@
+--This should be named ccfr when installed
+args = {...}
+if #args < 1 then
+    print("Usage")
+    print("ccfr <path>")
+else
+    if fs.exists(args[1]) then
+        fileEnding = string.sub(args[1],string.len(args[1])-4,string.len(args[1]))
+        if fileEnding == ".lua" then
+            --TODO
+        elseif fileEnding == ".nfp" then
+            --TODO
+        elseif fileEnding == ".md" then
+            --TODO
+        elseif fileEnding == ".txt" then
+            --TODO        
+        end
+    else
+        print("File not found")
+        return false
+    end
+end
