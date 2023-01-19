@@ -13,7 +13,11 @@ else
         elseif fileEnding == ".md" then
             --TODO
         elseif fileEnding == ".txt" then
-            --TODO        
+            --TODO
+        elseif fileEnding == ".ascii" then
+            --TODO
+        elseif fileEnding == ".dfpwm" then
+            --TODO
         end
     else
         print("File not found")
