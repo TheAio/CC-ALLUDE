@@ -147,14 +147,32 @@ function search(name)
     if args[1] == "search" then
         print("The following matches was found:")
     end
+    Found = {}
     for i=1,#PackN do
         for j=1,#PackN[i] do
             if string.upper(PackN[i][j]) == string.upper(name) then
+                Found[#Found+1] = i
                 if args[1] == "search" then
                     print(name,"or",PackN[i][1],"has id",i)
                     break
                 elseif args[1] == "findInstall" then
-                    args[2] = i
+                    if #Found > 1 then
+                        print("Found",#Found,"packages with the same name")
+                        print("Please select the correctversion from",Found[1],"to",Found[#Found])
+                        while true do
+                            selection = tonumber(read())
+                            if selection == nil then
+                            elseif selection > Found[#Found] or selection < Found[1] then
+                            else
+                                args[2] = selection
+                                break
+                            end
+                        end
+                    elseif #Found = 0 then
+                        return 0
+                    else
+                        args[2] = i
+                    end
                     return args
                 end
             end
