@@ -1,5 +1,4 @@
 --This should be renamed to DU when installed!
-error("FILE TRANSFER EDITION!")
 print("Enter scan location:")
 BiggestFile=""
 BiggestSize=0
