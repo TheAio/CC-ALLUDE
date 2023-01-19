@@ -176,7 +176,7 @@ function search(name)
                                 break
                             end
                         end
-                    elseif #Found = 0 then
+                    elseif #Found == 0 then
                         return 0
                     else
                         args[2] = i
