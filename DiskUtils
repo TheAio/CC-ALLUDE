@@ -1,0 +1,25 @@
+--This should be renamed to DU when installed!
+error("FILE TRANSFER EDITION!")
+print("Enter scan location:")
+BiggestFile=""
+BiggestSize=0
+function scan(dir)
+    Files = fs.list(dir)
+    for i=1,#Files do
+        if fs.isDir(dir..Files[i]) then
+        elseif fs.exists(dir..Files[i]) then
+            term.setTextColor(colors.red)
+            print(dir..Files[i],fs.getSize(dir..Files[i]),"/",fs.getCapacity(dir..Files[i]))
+            if fs.getSize(dir..Files[i]) > BiggestSize then
+                BiggestSize = fs.getSize(dir..Files[i])
+                BiggestFile = Files[i]
+            end
+        end
+    end
+    term.setTextColor(colors.white)
+    print("The biggest file is",BiggestFile,"@",BiggestSize)
+end
+Dir = read()
+if fs.exists(Dir) and fs.isDir(Dir) then
+    scan(Dir)
+end
