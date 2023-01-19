@@ -24,7 +24,9 @@ nil,
 "THIS PROGRAM IS IN EARLY ALPHA",
 nil,
 nil,
-nil
+nil,
+nil,
+"make sure to rename this program to 'startup'"
 }
 PackN =
 {
@@ -51,7 +53,9 @@ PackN =
 {"ccTurbineReactor","computercraft turbine reactor"},
 {"CCH","computercraftshell","remote shell"},
 {"ccfr","cc-fr","CC-FileReader","ComputerCraft-FileReader"},
-{"DU","DiskUtils"}
+{"DU","DiskUtils"},
+{"TextSender","TextTx","Text sender"},
+{"TextRequester","TextRx","Text requester"}
 }
 PackR =
 {
@@ -77,6 +81,8 @@ nil, --please see https://forums.computercraft.cc/index.php?topic=71.0
 nil, --Please see file for creddits
 nil,  --Please see file for creddits
 "APM findInstall SkyNet",
+nil,
+nil,
 nil,
 nil
 }
@@ -105,7 +111,9 @@ PackI =
 "pastebin get HjAaxXfR ccTurbineReactor",
 "pastebin get bzGHsYhk CCH",
 "wget https://raw.githubusercontent.com/TheAio/CC-ALLUDE/main/CC-FileReader ccfr",
-"wget https://raw.githubusercontent.com/TheAio/CC-ALLUDE/main/DiskUtils DU"
+"wget https://raw.githubusercontent.com/TheAio/CC-ALLUDE/main/DiskUtils DU",
+"pastebin get phGQtupn TextSender",
+"pastebin get 36qK8vPa startup"
 }
 if #args < 1 then
     print("USE")
