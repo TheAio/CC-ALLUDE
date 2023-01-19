@@ -14,13 +14,15 @@ if selection == "Y" then
         fileData[#fileData+1] = line
       end
     end
+    print("")
     for line=1,#fileData do
       print(fileData[line])
-      E,K = os.pullEvent("keys")
+      E,K = os.pullEvent("key")
     end
+    print("")
     print("If you agree to this license please press Y otherwise press N")
     while true do
-      E,K = os.pullEvent("keys")
+      E,K = os.pullEvent("key")
       if K == keys.n then
         shell.run("rm LICENSE")
         shell.run("mv LICENSE-for-another-file LICENSE")
