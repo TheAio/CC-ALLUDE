@@ -4,6 +4,7 @@ if selection == "Y" then
   print("To install CC-ALLUDE with this script, you need to accept the license")
   print("it is GNU General Public License v3.0")
   print("Press enter to read more..")
+  read()
   print("The license in short is:")
   print("Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.")
   print("Do you want to read the entire license or accept it directly? R/A")
