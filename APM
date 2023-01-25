@@ -112,8 +112,8 @@ PackI =
 "pastebin get bzGHsYhk CCH",
 "wget https://raw.githubusercontent.com/TheAio/CC-ALLUDE/main/CC-FileReader ccfr",
 "wget https://raw.githubusercontent.com/TheAio/CC-ALLUDE/main/DiskUtils DU",
-"pastebin get phGQtupn TextSender",
-"pastebin get 36qK8vPa startup"
+"wget https://raw.githubusercontent.com/TheAio/CC-ALLUDE/main/TextToInternet.lua TextSender",
+"wget https://raw.githubusercontent.com/TheAio/CC-ALLUDE/main/InternetTextToMonitor.lua startup"
 }
 if #args < 1 then
     print("USE")
