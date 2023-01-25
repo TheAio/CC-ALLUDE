@@ -50,6 +50,20 @@ if selection == "Y" then
   end
   shell.run("wget https://raw.githubusercontent.com/TheAio/CC-ALLUDE/main/APM APM")
   if fs.exists("APM") then
+    while true do
+      print("What would you like to install?")
+      print("1. Everything except startup files")
+      print("2. Only the package manager")
+      selection = read()
+      if selection == "1" then
+         shell.run("wget https://raw.githubusercontent.com/TheAio/CC-ALLUDE/main/APMs APMs")
+         shell.run("wget https://raw.githubusercontent.com/TheAio/CC-ALLUDE/main/InstallEverything.APMs")
+         shell.run("APMs InstallEverything.APMs")
+         break
+      elseif selection == "2" then
+        break
+      end
+    end
     os.reboot()
   else
     print("The install seems to have failed")
