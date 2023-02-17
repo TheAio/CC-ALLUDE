@@ -1,3 +1,7 @@
+shell.run("rm APM")
+shell.run("wget https://raw.githubusercontent.com/TheAio/CC-APM/main/APM APM")
+printError("APM HAS UPDATED PLEASE RUN AGAIN")
+return false
 args = {...}
 PackW =
 {
